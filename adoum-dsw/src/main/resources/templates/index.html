@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-2">
+            <div>
+                <h1 th:text="${nome}"></h1>
+                <div class="foto">
+                    <img src="../img/semafoto.jpg" alt="Minha Foto">
+                </div>
+            </div>
+            <div class="informacoes">
+                <p th:text="${endereco}"></p>
+                <p th:text="${email}"></p>
+                <p th:text="${telefone}"></p>
+            </div>
+        </div>
+        <div class="formacao">
+            <h2>Formação</h2>
+            <p th:text="${instituicao}"></p>
+            <p th:text="${curso}"></p>
+            <p th:text="${semestre}"></p>
+            <p th:text="${periodo}"></p>
+        </div>
+        <div class="resumo">
+            <h2>Objetivo</h2>
+            <p th:text="${resumo}"></p>
+        </div>
+    </div>
+</body>
+</html>
